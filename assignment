@@ -1,0 +1,10 @@
+aGlobal <- rnorm(10)
+bGlobal <- rnorm(10)
+  
+f <- function()
+{ 
+  a <- aGlobal
+  b <- bGlobal
+  plot(b ~ a)
+}
+codetools::findGlobals(f) 
